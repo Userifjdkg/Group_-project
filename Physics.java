@@ -16,6 +16,8 @@ public class Physics {
     }
     public double work(double force, double displacement){
         return force * displacement;
+        
+        
     }
     public double power(double work, double time){
         return work / time;
@@ -23,6 +25,8 @@ public class Physics {
     public double force(double mass, double acceleration){
         return mass * acceleration;
     }
+    //gui(graphic user interface starts from here)
+   
     public static void main(String[]args){
         double mass = Double.parseDouble(JOptionPane.showInputDialog("Enter mass in kg:"));
         double velocity = Double.parseDouble(JOptionPane.showInputDialog("Enter velocity in m/s:"));
@@ -32,6 +36,7 @@ public class Physics {
         double displacement = Double.parseDouble(JOptionPane.showInputDialog("Enter displacement in m:"));
         double time = Double.parseDouble(JOptionPane.showInputDialog("Enter time in s:"));
         double acceleration = Double.parseDouble(JOptionPane.showInputDialog("Enter acceleration in m/s^2:"));
+        
 
         Physics physics = new Physics(mass, velocity);
         double kineticEnergy = physics.kineticEnergy();
