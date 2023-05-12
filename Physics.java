@@ -50,6 +50,7 @@ public class Physics {
                 "Work: " + work + " J\n" +
                 "Power: " + power + " W\n" +
                 "Force: " + forceResult + " N";
+       //in line 52 "forceResult was all written in lower case instead of camelCase, so the code couldnt run.
 
 
 
